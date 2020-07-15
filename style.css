@@ -138,7 +138,7 @@ about_area
 .about_area {
     max-width: 800px;
     margin: auto;
-    padding-bottom: 8em;
+    padding-bottom: 6em;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
     letter-spacing: 0.1em;
@@ -195,6 +195,7 @@ p {
     .about_text p,.about_skill p{
         font-size: 12px;
         letter-spacing: 2px;
+        line-height: 1.7;
     }
 }
 
@@ -221,7 +222,7 @@ div.box {
     padding-top: 4em;
 }
 .box2,.box3,.box4 {
-    padding-top: 10em;
+    padding-top: 6em;
 }
 
 .box1,.box2,.box3,.box4 img {
