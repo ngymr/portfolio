@@ -146,7 +146,7 @@ about_area
 }
 
 .about_name,.about_text {
-    padding: 0.7em;
+    padding: 0.5em;
     font-size: 15px;
     text-align: left;
     border-bottom: 1px #ccc solid;
@@ -391,7 +391,7 @@ h4 {
 /* SP */
 @media screen and (max-width: 896px) {
     .box1 {
-        padding: 3em 0.6em 0;
+        padding: 2em 0.6em 0;
     }
     .box2, .box3, .box4 {
         padding:  5em 0.6em 0;
