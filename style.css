@@ -1,0 +1,450 @@
+@charset "utf-8";
+
+html{scroll-behavior: smooth;}
+
+body {
+    display: block;
+    margin: 0;
+    background-color: #fff;
+    font-size: 15px;
+    font-family: '游ゴシック',YuGothic,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif;
+    line-height: 1.9;
+    letter-spacing: .08rem;
+    font-weight: normal;
+    color: #333;
+}
+
+/*--------------------
+header
+---------------------*/
+header {
+    background-color:rgba(255,255,255,0.7);
+    border-bottom: #ccc 1px solid;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header {
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+    height: 75px;
+    padding: 20px;
+    margin: 0 auto;
+    font-weight: 200;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+h1 a {
+    text-decoration: none!important;
+    color: #000;
+}
+h1 a:hover {color: #000;}
+
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+}
+
+li {
+    padding: 7px 16px;
+}
+
+li a {
+    color:#000;
+    text-decoration: none!important;
+    font-size:18px;
+    padding-bottom: 5px;
+}
+
+li a:hover {
+    color: #000;
+    border-bottom: 1px solid #333;
+}
+
+/* SP */
+@media screen and (max-width: 896px) {
+    .header{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 99;
+    padding: 0;
+    }
+    h1 {font-size: 20px;padding-top: 13px;}
+    li a {font-size: 14px;}
+    li {padding: 13px 15px;}
+}
+
+
+/*--------------------
+main 共通
+---------------------*/
+.contaner {
+    margin: auto;
+    padding-top: 1em;
+}
+
+/* .pcで改行 .spで改行*/
+@media screen and (min-width: 680px){
+    .pc { display:block; }
+    .sp { display:none; }
+  }
+  @media screen and (max-width: 680px){
+    .pc { display:none; }
+    .sp { display:block; }
+  }
+
+/* ふわっと表示 */
+.fadein {
+    opacity : 0;
+    transform: translateY(20px);
+    transition: all 1s;
+  }
+
+  h2 {
+    padding-top: 1.5em;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* SP */
+@media screen and (max-width: 896px) {
+    h2 {
+        padding: 1em 0.3em 0;
+        font-size: 2em;
+    }
+}
+
+/*--------------------
+about_area
+---------------------*/
+.about_area {
+    max-width: 800px;
+    margin: auto;
+    padding-bottom: 8em;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.1em;
+    line-height: 2;
+}
+
+.about_name,.about_text {
+    padding: 0.7em;
+    font-size: 15px;
+    text-align: left;
+    border-bottom: 1px #ccc solid;
+}
+.about_skill{
+    padding: 0.7em;
+    font-size: 15px;
+    text-align: left;
+}
+
+p {
+    padding: 0.7em 1em;
+}
+
+.about_name{
+    font-size: 1.5em;
+}
+
+.about_name span {
+    font-size: 0.5em;
+    letter-spacing: 0.2em;
+}
+.about_name span:last-child {
+    padding-left: 50px;
+}
+
+.icon {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    background: #f1f1f1;
+    border-radius: 10px;
+    margin: 3px;
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+/* SP */
+@media screen and (max-width: 896px) {
+    .about_area {
+        width: 100%;
+        padding: 0 1em 3em;
+    }
+
+    .about_text p,.about_skill p{
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+}
+
+
+/*--------------------
+works_area
+---------------------*/
+.works_area {
+    width: 100%;
+    margin: auto;
+    background-color: #d8ebe9;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+div.box {
+    max-width: 800px;
+    margin: auto;
+    padding-bottom: 5em;
+}
+
+.box1 {
+    padding-top: 4em;
+}
+.box2,.box3,.box4 {
+    padding-top: 10em;
+}
+
+.box1,.box2,.box3,.box4 img {
+    margin: auto;
+}
+
+.box1 img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.box2 img {
+    width: 400px;
+    height: 700px;
+    object-fit: cover;
+}
+
+.title_box {
+    background-color: #fff;
+    text-align: center;
+}
+
+.fa-desktop:before,.fa-mobile-alt:before {
+    padding-right: 0.7em;
+}
+
+.title_box p {
+    font-size: 14px;
+}
+
+.point_box {
+    position: relative;
+    margin: 2em 1em 1em;
+    padding: 0.5em 1em;
+    border: solid 1px #333;
+    border-radius: 8px;
+}
+
+.point_box p {margin: 0;}
+
+.point_box .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 23px;
+    background: #d8ebe9;
+    color: #333;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.text {padding-bottom: 2em;}
+
+.text p {
+    font-size: 20px;
+    font-weight: bold;
+    border-top: 1px #333 solid;
+    border-bottom: 1px #333 solid;
+}
+
+.text p span{
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.text_box {
+    font-size: 15px;
+    line-height: 1em;
+    margin: 20px;
+}
+
+.text_box ul {
+    list-style-type: none;
+    padding: 1em;
+}
+
+.text_box ul li:before {
+    left: 0;
+    position: absolute;
+    font-family: FontAwesome;
+    content: "\f00c";
+}
+
+.text_box ul li {
+    position: relative;
+    padding-left: 25px;
+}
+
+.text_box li {
+    padding: 8px 0;
+}
+
+.fa-check:before {
+    padding-right: 7px;
+}
+
+.marker {
+    background: linear-gradient(transparent 60%, #ffff66 60%);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.ex{
+    font-size: 15px;
+    font-weight: 600;
+    color: #0e2e8b;
+    line-height: 2.5;
+    border-bottom: 1px #0e2e8b solid;
+    padding: 0 5px;
+}
+
+.big {
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(transparent 60%, #ffff66 60%);
+}
+
+.icon_box {
+    text-align: right;
+    margin: 1em;
+}
+
+
+.row {
+    margin: auto;
+    padding-bottom: 1.5em;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.row img {
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.3);
+    width: 100%;
+    transition-duration: 0.5s;
+}
+
+
+.row img:hover {
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+
+
+/* icon */
+.fa-code:before {
+    padding-right: 10px;
+}
+
+.fa-pen-nib:before {
+    padding-right: 10px;
+}
+
+/* モーダル */
+h4 {
+    font-size: 1rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.modal-dialog {max-width: 700px!important;}
+.modal-content {background-color: rgba(255,255,255,0.7);}
+.modal-body {overflow: scroll;}
+
+/* SP */
+@media screen and (max-width: 896px) {
+    .box1 {
+        padding: 3em 0.6em 0;
+    }
+    .box2, .box3, .box4 {
+        padding:  5em 0.6em 0;
+    }
+    .box1 img {height: 280px;}
+    .box2 img {height: 350px;}
+
+    .title_box p {font-size: 11px;}
+
+    .point_box {margin: 2em 0 1em;}
+    .point_box p {padding: 0.7em 0;}
+
+    .text p {font-size: 16px;text-align: center;
+    }
+    .text p span {font-size: 10px;}
+    .text_box{
+        font-size: 13px;
+        margin: 0;
+        padding: 1em 0;
+    }
+
+    .sub-title {text-align: center;}
+
+    .marker {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .ex {
+        font-size: 13px;
+        line-height: 2;
+    }
+
+    .big {line-height: 2;font-size: 15px;}
+
+    .col-6 {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+}
+
+
+/*--------------------
+footer
+---------------------*/
+footer {
+    font-size: 12px;
+    width: 100%;
+    padding: 1.5em 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
