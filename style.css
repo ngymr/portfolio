@@ -221,11 +221,11 @@ div.box {
 .box1 {
     padding-top: 4em;
 }
-.box2,.box3,.box4 {
+.box2,.box3,.box4,.box5 {
     padding-top: 6em;
 }
 
-.box1,.box2,.box3,.box4 img {
+.box1,.box2,.box3,.box4,.box5 img {
     margin: auto;
 }
 
@@ -394,7 +394,7 @@ h4 {
     .box1 {
         padding: 2em 0.6em 0;
     }
-    .box2, .box3, .box4 {
+    .box2, .box3, .box4, .box5 {
         padding:  5em 0.6em 0;
     }
     .box1 img {height: 280px;}
